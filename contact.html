@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакт</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+     <section class="sub-header">
+       <nav class="navbar">
+         <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+         <div class="nav-links" id="navLinks">
+          <i class="uil uil-times" onclick="hideMenu()"></i>
+           <ul>
+              <li><a href="index.html" class="nav-link">Почетна</a></li>
+              <li><a href="index.html#2" class="nav-link" onclick="hideMenu()">Струки</a></li>
+              <li><a href="contact.html" class="nav-link">Контакт</a><li>
+           </ul>
+         </div>
+         <i class="uil uil-bars" onclick="showMenu()"></i>
+       </nav>
+       <h1>Контакт</h1>
+     </section>
+
+    <!---------------------Kontakt------------------------>
+
+     <section class="location">
+        <h1>Локација</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m10!1m3!1d512!2d22.0206408!3d41.4418777!2m1!1f15.24!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x1356650b903daca7%3A0xabf6272b41d0f0cf!2sKiro%20Spandzov%20-%20Brko!5e1!3m2!1sen!2smk!4v1633464876547!5m2!1sen!2smk" 
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+     </section>
+
+     <section class="contact">
+         <div class="row">
+             <div class="contact-col">
+                 <div>
+                    <i class="uil uil-map"></i>
+                    <span>
+                        <h5>Шишка бр. 29, Кавадарци</h5>
+                        <p>Кавадарци, Македонија</p>
+                    </span>
+                 </div>
+                 <div>
+                    <i class="uil uil-phone"></i>
+                    <span>
+                        <h5>043412847</h5>
+                        <p>Само работни денови</p>
+                    </span>
+                 </div>
+                 <div>
+                    <i class="uil uil-envelope"></i>
+                    <span>
+                        <h5>dssuksb@t.mk</h5>
+                        <p>Активен маил, одговор во најбрзо време</p>
+                    </span>
+                 </div>
+             </div>
+
+             <div class="contact-col">
+                <form action="">
+                    <input type="text" placeholder="Внеси го твоето име" required>
+                    <input type="text" placeholder="Внеси го твојот емејл" required>
+                    <input type="text" placeholder="Внеси го насловот" required>
+                    <textarea rows="8" placeholder="Порака"></textarea>
+                    <button type="submit" class="map-btn red-btn">Прати порака</button>
+                </form>
+
+             </div>
+         </div>
+     </section>
+
+    <!---------------------Footer------------------------->
+
+     <section class="footer">
+      <h4>Social Media</h4>
+      <div class="icons">
+        <a href="https://www.facebook.com/profile.php?id=100009483255162" target="_blank"><i class="uil uil-facebook-f"></i></a>
+        <a href="#"><i class="uil uil-twitter"></i></a>
+        <a href="#"><i class="uil uil-instagram"></i></a>
+      </div>
+      <p>Made with <i class="uil uil-heart"></i> by Angel D.</p>
+     </section>
+
+    <!----------------------Menu Toggle------------------->
+     <script>
+       var navLinks = document.getElementById("navLinks");
+
+       function showMenu(){
+         navLinks.style.right = "0";
+       }
+
+       function hideMenu(){
+         navLinks.style.right = "-200px";
+       }
+     </script>
+
+  </body>
+</html>

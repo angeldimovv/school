@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Киро Спанџов-Брко</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+     <section class="header">
+       <nav class="navbar">
+         <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+         <div class="nav-links" id="navLinks">
+          <i class="uil uil-times" onclick="hideMenu()"></i>
+           <ul>
+              <li><a href="index.html" class="nav-link">Почетна</a></li>
+              <li><a href="#2" class="nav-link" onclick="hideMenu()">Струки</a></li>
+              <li><a href="contact.html" class="nav-link">Контакт</a><li>
+           </ul>
+         </div>
+         <i class="uil uil-bars" onclick="showMenu()"></i>
+       </nav>
+       <div class="homepage">
+         <h1>Добредојдовте во Киро Спанџов-Брко</h1>
+         <p>Современо училиште во кое се застапени електротехничката и машинската струка<br>со профили од три и четиригодишно траење на образованието.</p>
+         <a href="https://www.shorturl.at/hzRZ1" target="_blank" class="map-btn">Посети не и дознај повеќе</a>
+       </div>
+     </section>
+
+     <!-----------------------Struki---------------------->
+
+     <section class="struki" id="2">
+      <h1>Струки</h1>
+      <p>Струки кој се предаваат во училиштето</p>
+
+      <div class="row">
+        <div class="struki-col">
+          <h3>Машинска струка</h3>
+          <p>Машински техничар за моторни возила<br>Техничар за компјутерско управување<br>Металуршки техничар<br>Автомеханичар</p>
+        </div>
+        <div class="struki-col">
+          <h3>Електротехничка струка</h3>
+          <p>Електротехничар за компјутерска техника и автоматика<br>Електротехничар енергетичар<br>Техничар за индустриска мехатроника</p>
+        </div>
+        <div class="struki-col">
+          <h3>Геолошко, рударски-металуршка струка</h3>
+          <p>Металуршки техничар</p>
+        </div>
+      </div>
+     </section>
+
+    <!------------------------Footer---------------------->
+
+     <section class="footer">
+      <h4>Social Media</h4>
+      <div class="icons">
+        <a href="https://www.facebook.com/profile.php?id=100009483255162" target="_blank"><i class="uil uil-facebook-f"></i></a>
+        <a href="#"><i class="uil uil-twitter"></i></a>
+        <a href="#"><i class="uil uil-instagram"></i></a>
+      </div>
+      <p>Made with <i class="uil uil-heart"></i> by Angel D.</p>
+     </section>
+
+    <!----------------------Menu Toggle------------------->
+     <script>
+       var navLinks = document.getElementById("navLinks");
+
+       function showMenu(){
+         navLinks.style.right = "0";
+       }
+
+       function hideMenu(){
+         navLinks.style.right = "-200px";
+       }
+     </script>
+
+  </body>
+</html>
