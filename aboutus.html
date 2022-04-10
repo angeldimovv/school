@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>За нас – СОУ "Киро Спанџов-Брко"</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+     <section class="sub-header-global">
+       <nav class="navbar">
+         <a href="index.html"><img src="img/logo.png" alt="logo" style="opacity: 0.7;"></a>
+         <div class="nav-links" id="navLinks">
+          <i class="uil uil-times" onclick="hideMenu()"></i>
+           <ul>
+              <li><a href="index.html" class="nav-link">Почетна</a></li>
+              <li><a href="aboutus.html" class="nav-link">За Нас</a></li>
+              <li><a href="index.html#2" class="nav-link" onclick="hideMenu()">Струки</a></li>
+              <li><a href="gallery.html" class="nav-link">Галерија</a><li>
+              <li><a href="contact.html" class="nav-link">Контакт</a><li>
+           </ul>
+         </div>
+         <i class="uil uil-bars" onclick="showMenu()"></i>
+       </nav>
+       <h1>За Нас</h1>
+     </section>
+
+    <!---------------------Za Nas------------------------>
+
+
+     <section class="aboutus">
+       <p>
+         <strong>
+          СОУ "Киро Спанџов-Брко" - Кавадарци, основано како занаетчиско трговско училиште, кое датира од 1921 год.
+         </strong>
+       </p>
+        <p>Без образование и воспитание човекот не може да преживее и нема да постои можност за развој на техниката и науката.
+         Затоа главна цел на нашето училиште е создавањето на средина каде што ученикот ќе стекнува знаења, вештини и способности во делот на образовната компонента   стекнување на животни и работни искуства, развивање на критички однос кон работата и вредностите на светот околу него односно воспитната компонента.</p>
+        <p>За успешното реализирање на овој воспитно-образовен процес имаме определени дидактички принципи кои се почитуваат во сите фази на воспитно-образовниот процес:  принцип на соодветност, принцип на активно учење, принцип на нагледност, на систематичност и постапност, принцип на поврзување на теоријата со практиката принцип  на трајност на знаењето.</p>
+
+        <section class="half-half">
+          <img src="img/banner.jpg" class="half-left">
+          <div class="half-half-text">
+            <h1>Формирање и развој</h1>
+            <p>Писмени докази за постоењете на училиштето датираат уште од  1921 год. под името "Занаетчиско трговско училиште".</p>
+            <p>Во  1932 / 1933 год. ова училиште го добива  името "Стручно продолжено училиште", а во 1933/34  се школувал и Киро Спанџов, изучувајќи го берберскиот занает.</p>
+            <p>Во 1965/66 год. го менува името во Индустриско училиште со практична обука.
+            Во периодот од 1978-1979 год. станува "Училишен центар за средно образование" под името "Киро Спанџов – Брко".</p>
+          </div>
+        </section>
+        <p></p>
+     </section>
+
+    <!---------------------Footer------------------------->
+
+     <section class="footer">
+      <h4>Social Media</h4>
+      <div class="icons">
+        <a href="https://www.facebook.com/profile.php?id=100009483255162" target="_blank"><i class="uil uil-facebook-f"></i></a>
+        <a href="#"><i class="uil uil-twitter"></i></a>
+        <a href="#"><i class="uil uil-instagram"></i></a>
+      </div>
+      <p>Made with <i class="uil uil-heart"></i> by Angel D.</p>
+     </section>
+
+    <!----------------------Menu Toggle------------------->
+     <script>
+       var navLinks = document.getElementById("navLinks");
+
+       function showMenu(){
+         navLinks.style.right = "0";
+       }
+
+       function hideMenu(){
+         navLinks.style.right = "-200px";
+       }
+     </script>
+
+  </body>
+</html>
